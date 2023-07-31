@@ -1,0 +1,24 @@
+USE MASTER
+GO
+
+CREATE DATABASE PRUEBA_CONEXION
+GO
+
+USE PRUEBA_CONEXION
+GO
+
+CREATE TABLE pirate(
+id_pirate INT IDENTITY(1,1) PRIMARY KEY,
+pirate_name VARCHAR(100) NOT NULL,
+age	 INT,
+height FLOAT
+)
+GO
+
+INSERT INTO pirate VALUES 
+('Monkey D. Luffy', 19, 1.74),
+('Roronoa Zoro', 19, 1.81)
+GO
+
+SELECT * FROM PIRATE 
+GO
